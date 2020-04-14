@@ -15,14 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import url, include
-from rest_framework import routers
-from temphum import views
+#from django.conf.urls import url, include
+#from rest_framework import routers
+from temphum import views as temphum_views
 
-router = routers.DefaultRouter()
-router.register(r'temphum', views.TemphumViewSet)
+
+#router = routers.DefaultRouter()
+#router.register(r'temphum', temphum_views.TemphumViewSet)
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    #url(r'^', include(router.urls)),
     path('admin/', admin.site.urls),
+    path('home/', temphum_views.home, name='home'),
+    path('', temphum_views.temphum, name='temphum'),
 ]
