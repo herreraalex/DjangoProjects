@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'proyectointegrador1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'EverGreen',
-        'USER': 'postgres',
-        'PASSWORD':'savaljkm',
-        'HOST':'localhost'
+        'NAME': 'fbjkcryw',
+        'USER': 'fbjkcryw',
+        'PASSWORD':'urjri4sH1I2W1llMJ_oz1fJzDe7XethW',
+        'HOST':'raja.db.elephantsql.com'
     }
 }
 
