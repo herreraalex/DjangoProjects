@@ -21,7 +21,7 @@ class Cultivo(models.Model):
     codigo = models.CharField(verbose_name='codigo', max_length=40)
     latitud = models.IntegerField(verbose_name='latitud')
     longitud = models.IntegerField(verbose_name='longitud')
-    producto = models.CharField(max_length = 30,choices = CULTIVO_CHOICES, default='Leche')
+    producto = models.CharField(verbose_name = 'producto', max_length = 30,choices = CULTIVO_CHOICES, default='Leche')
     validacion = models.PositiveIntegerField(verbose_name='validacion')
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
